@@ -1,20 +1,74 @@
-#
-# greeting.py
-# 
-# This example demonstrates how to create a web page using Python
-#
 
-name = input('What is your name? ')
 
-# Create web page in a file named output.html
+<html>
+    <head>
+      <style>
+          table, td, th {
+              border: thin solid black;
+              margin: 0px;
+              padding: 10px;
+              border-collapse: collapse;
+              text-align: right;
+          }
+          th {
+            background-color: lightblue;
+          }
+      </style>
+    </head>
+    <body>
+    <h1>Tax for Fred Jones</h1>
+    <table>
+      <tr>
+        <th>Filing status:</th>
+        <td>Single</td>
+      </tr>
+      <tr>
+          <th>Children:</th>
+          <td>0</td>
+      </tr>
+      <tr>
+          <th>Gross income:</th>
+          <td>$50000.00</td>
+      </tr>
+      <tr>
+          <th>Standard deduction:</th>
+          <td>$5000.00</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><hr/></td>
+      </tr>
+      <tr>
+          <th>Adjusted Gross Income:</th>
+          <td>$45000.00</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <th>Base Tax:</th>
+          <td>$5000.00</td>
+      </tr>
+      <tr>
+          <th>Child credit:</th>
+          <td>$0.00</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><hr/></td>
+      </tr>
+      <tr>
+          <th>Refund Amount:</th>
+          <td>$0.00</td>
+      </tr>
+      <tr>
+          <th>Amount You Owe:</th>
+          <td>$5000.00</td>
+      </tr>
+    </table>
 
-outfile = open('output.html', 'w')
-outfile.write("""
-   <html>
-   <body>
-     <h1>Greetings</h1>
-     <p>Hello, """ + name + """!</p>
-   </body>
-   </html>
-   """)
-outfile.close()
+
+    <p>Note: Right-click this page and choose View Page Source to see the HTML to use.</p>
+
+</body></html>
